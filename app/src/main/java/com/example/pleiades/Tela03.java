@@ -34,11 +34,11 @@ public class Tela03 extends AppCompatActivity implements View.OnClickListener {
         Intent i = new Intent();
         i = getIntent();
         if(i != null){
-            //significa que não veio corrompido
+
             Bundle caixa = new Bundle();
             caixa = i.getExtras();
             if(caixa != null){
-                //significa que a caixa não veio corrompido
+                //sem corrupcao
                 nomeSujeito = caixa.getString("nome");
             }
         }
@@ -65,14 +65,6 @@ public class Tela03 extends AppCompatActivity implements View.OnClickListener {
     }
     public void carregaTudo(){
         texto.setText(nomeSujeito);
-        img1.setBackgroundColor(Color.CYAN);
-        img2.setBackgroundColor(Color.CYAN);
-        img3.setBackgroundColor(Color.CYAN);
-        img4.setBackgroundColor(Color.CYAN);
-        img5.setBackgroundColor(Color.CYAN);
-        img6.setBackgroundColor(Color.CYAN);
-        img7.setBackgroundColor(Color.CYAN);
-        img8.setBackgroundColor(Color.CYAN);
         img1.setEnabled(false);
         img2.setEnabled(false);
         img3.setEnabled(false);
@@ -132,6 +124,7 @@ public class Tela03 extends AppCompatActivity implements View.OnClickListener {
             imgPrimeiroToque.setBackgroundColor(Color.GREEN);
             imgSegundoToque.setEnabled(false);
             imgSegundoToque.setBackgroundColor(Color.GREEN);
+
         }else{
             imgPrimeiroToque.setBackgroundColor(Color.RED);
             imgSegundoToque.setBackgroundColor(Color.RED);
@@ -141,8 +134,7 @@ public class Tela03 extends AppCompatActivity implements View.OnClickListener {
                 public void run() {
                     imgPrimeiroToque.setImageResource(R.drawable.ic_action_name_2);
                     imgSegundoToque.setImageResource(R.drawable.ic_action_name_2);
-                    imgPrimeiroToque.setBackgroundColor(Color.CYAN);
-                    imgSegundoToque.setBackgroundColor(Color.CYAN);
+
                 }
             }, 2000);
         }
@@ -242,5 +234,7 @@ public class Tela03 extends AppCompatActivity implements View.OnClickListener {
         if(v == btn){
             carregaTudo();
         }
+
+
     }
 }

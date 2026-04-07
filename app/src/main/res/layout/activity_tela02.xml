@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
-        android:background="#3F51B5"
+        android:background="#2E3C3C"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -67,37 +67,13 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Celular"
-                android:textColor="#FFFEFE"
-                android:textSize="24sp" />
-
-            <EditText
-                android:id="@+id/editTextText3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="#FFFEFE"
-                android:ems="10"
-                android:inputType="text" />
-        </LinearLayout>
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
-        android:background="#00FFFF"
+        android:background="#2E3C3C"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -105,7 +81,7 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#FF5722"
+            android:backgroundTint="#473C3B"
             android:text="Ir"
             android:textColor="#FFFFFF"
             android:textSize="34sp" />
